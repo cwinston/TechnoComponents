@@ -18,6 +18,8 @@ Item {
         width: dropSbadowText.width - 20
         height: 20
         text: qsTr(dropSbadowText.text)
+        wrapMode: Text.WordWrap
+        textFormat: Text.AutoText
         horizontalAlignment: mainText.horizontalAlignment
         font.bold: true
         font.pixelSize: mainText.font.pixelSize
@@ -30,6 +32,7 @@ Item {
             height: 20
             color: "#ffffff"
             text: qsTr(dropSbadowText.text)
+            wrapMode: Text.WordWrap
            // font.family: "Tahoma"
             horizontalAlignment: Text.AlignHCenter
             font.bold: true
