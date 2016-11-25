@@ -28,6 +28,8 @@ Item
             TextArea
             {
                 id: status
+                textColor: "#343434"
+                font.family: "Verdana"
                  anchors.fill: parent
               // anchors.bottom: statusPanel.bottom
               //  height: statusPanel.height
