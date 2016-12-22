@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Accordian.qml</file>
+        <file>ClosablePanel.qml</file>
+        <file>closablePanelIcon.png</file>
+        <file>ContentLoader.qml</file>
+        <file>DropShadowText.qml</file>
+        <file>InsetTextField.qml</file>
+        <file>PanelHighlight3D.qml</file>
+        <file>SkinnedButton.qml</file>
+        <file>SkinnedComboBox.qml</file>
+        <file>SkinnedHorizontalScrollHandle.qml</file>
+        <file>SkinnedImageButton.qml</file>
+        <file>SkinnedVerticalScrollHandle.qml</file>
+        <file>StatusPanel.qml</file>
+        <file>PopupMessagePanel.qml</file>
+        <file>ButtonLayoutComponent.qml</file>
+    </qresource>
+</RCC>
