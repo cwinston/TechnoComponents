@@ -7,6 +7,7 @@ Item
     property alias headerBackGround: headerBackground
     property alias headerText: headerText.text
     property real expectedContentHeight
+    property alias gradient: headerBackground.gradient
     property string source
     property QtObject panelLoader
     property QtObject loaderSprite
@@ -316,6 +317,7 @@ Connections
         if( closingTransition.running === false)
         {
             //rect.state = "shrinking"
+            content.visible = false;
             console.log("????????????????????   "+loaderSprite.content);
             removeLoader();
         }

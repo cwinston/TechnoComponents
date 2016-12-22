@@ -4,8 +4,9 @@ import QtQuick.Controls 1.3
 Button {
     id: skinnedButton
     property alias text: dsText.text
-    width: 150
-    height: 30
+    property alias gradient: buttonBackground.gradient
+    width: dsText.width
+    height: 40
 
     onPressedChanged:
     {
