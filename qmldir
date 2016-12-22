@@ -10,6 +10,8 @@ SkinnedButton 1.0 SkinnedButton.qml
 SkinnedComboBox 1.0 SkinnedComboBox.qml
 SkinnedImageButton 1.0 SkinnedImageButton.qml
 StatusPanel 1.0 StatusPanel.qml
+PopupMessagePanel 1.0 PopupMessagePanel.qml
+internal ButtonLayoutComponent ButtonLayoutComponent.qml
 internal SkinnedHorizontalScrollHandle SkinnedHorizontalScrollHandle.qml
 internal SkinnedVerticalScrollHandle SkinnedVerticalScrollHandle.qml
 typeinfo TechnoComponents.qmltypes
