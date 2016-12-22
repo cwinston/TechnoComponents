@@ -17,7 +17,7 @@ HEADERS += \
 RESOURCES += qml.qrc
 
 DISTFILES = qmldir \
-    TechnoComponents.qmltypes \
+    TechnoComponents.qmltypes
 
 
 !equals(_PRO_FILE_PWD_, $$OUT_PWD) {
