@@ -1,4 +1,4 @@
-import QtQuick 2.0
+import QtQuick 2.5
 
 Item {
     id: dropSbadowText
@@ -9,10 +9,12 @@ Item {
     property alias fontColor: mainText.color
     property alias contentWidth: mainText.contentWidth
     property alias contentHeight: mainText.contentHeight
+    property alias textOpacity:  mainText.opacity
     width: 200
     height: 25
-    Text {
-        id: text1
+    Text
+    {
+        id: shadowText
         x: 8
         y: 3
         width: dropSbadowText.width - 20
@@ -22,9 +24,12 @@ Item {
         textFormat: Text.AutoText
         horizontalAlignment: mainText.horizontalAlignment
         font.bold: true
+        font.family: mainText.font.family;
         font.pixelSize: mainText.font.pixelSize
+        opacity: mainText.opacity
 
-        Text {
+        Text
+        {
             id: mainText
             x: -2.5
             y: -2.5
