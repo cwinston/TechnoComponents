@@ -1,0 +1,17 @@
+module TechnoComponents
+Accordian 1.0 Accordian.qml
+ClosablePanel 1.0 ClosablePanel.qml
+internal ClosablePanelIcon closablePanelIcon.qml
+internal ContentLoader ContentLoader.qml
+DropShadowText 1.0 DropShadowText.qml
+InsetTextField 1.0 InsetTextField.qml
+PanelHighlight3D 1.0 PanelHighlight3D.qml
+SkinnedButton 1.0 SkinnedButton.qml
+SkinnedComboBox 1.0 SkinnedComboBox.qml
+SkinnedImageButton 1.0 SkinnedImageButton.qml
+StatusPanel 1.0 StatusPanel.qml
+PopupMessagePanel 1.0 PopupMessagePanel.qml
+internal ButtonLayoutComponent ButtonLayoutComponent.qml
+internal SkinnedHorizontalScrollHandle SkinnedHorizontalScrollHandle.qml
+internal SkinnedVerticalScrollHandle SkinnedVerticalScrollHandle.qml
+typeinfo TechnoComponents.qmltypes

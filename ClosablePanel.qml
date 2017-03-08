@@ -1,5 +1,5 @@
 import QtQuick 2.5
-import QtQuick.Controls 1.3
+import QtQuick.Controls 1.4
 import QtQuick.Layouts 1.2
 
 Item
@@ -28,45 +28,47 @@ Item
     height: headerBackground.height + panelBackground.height
     property alias panelBackground: panelBackground
 
-    Rectangle {
+    Rectangle
+    {
         id: headerBackground
         width: closablePanel.width
         height: 30
         radius: 10
         gradient: Gradient
         {
-        GradientStop { position: 0.027; color: "#000000" }
-        GradientStop { position: 0.05;  color: "#142eb0" }
-        GradientStop { position: 0.2; color: "lightsteelblue" }
-        GradientStop { position: 0.5; color: "#0000ee" }
-        GradientStop { position: 0.941; color: "blue" }
-        GradientStop { position: 0.986; color: "#000000" }
+            GradientStop { position: 0.027; color: "#000000" }
+            GradientStop { position: 0.05;  color: "#142eb0" }
+            GradientStop { position: 0.2; color: "lightsteelblue" }
+            GradientStop { position: 0.5; color: "#0000ee" }
+            GradientStop { position: 0.941; color: "blue" }
+            GradientStop { position: 0.986; color: "#000000" }
+        }
     }
-}
 
-Rectangle {
-    id: panelBackground
-    width: closablePanel.width
-    height: 0
-    anchors.top: headerBackground.bottom
-    color: "#00000000"
-}
+    Rectangle
+    {
+        id: panelBackground
+        width: closablePanel.width
+        height: 0
+        anchors.top: headerBackground.bottom
+        color: "#00000000"
+    }
 
-PanelHighlight3D
-{
-    id: highlight
-    width: panelBackground.width
-    height: panelBackground.height+3
-    bottomShadowColor: "#000000"
-    upperShadowColor:"#000000";
-    innerRightHighlightColor: "#cecece";
-    innerBottomHighlightColor:  "#cecece"
-    outerRightShadowColor:"#999999"
-    innerLeftShadowColor:"#000000"
-    outterUpperHighlightColor: "#444444";
-    outerLeftHighlightColor: "#999999";
-    y:29
-}
+    PanelHighlight3D
+    {
+        id: highlight
+        width: panelBackground.width
+        height: panelBackground.height+3
+        bottomShadowColor: "#000000"
+        upperShadowColor:"#000000";
+        innerRightHighlightColor: "#cecece";
+        innerBottomHighlightColor:  "#cecece"
+        outerRightShadowColor:"#999999"
+        innerLeftShadowColor:"#000000"
+        outterUpperHighlightColor: "#444444";
+        outerLeftHighlightColor: "#999999";
+        y:29
+    }
 
 Column {
     id: panelLayout
@@ -243,7 +245,7 @@ function addLoader()
     // var component =  Qt.createQmlObject('import QtQuick 2.5; Loader {id: "panelLoader"}', panelBackground);
     panelLoader = Qt.createComponent("ContentLoader.qml");
 
-    if (panelLoader.status == Component.Ready)
+    if (panelLoader.status === Component.Ready)
     {
         finishCreation();
     }

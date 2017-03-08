@@ -94,27 +94,21 @@ ComboBox {
                 }
 
                 itemDelegate.label:
-                    Rectangle {
-                        height: styledDelegateLabel.implicitHeight + 2;
-                        width: background.width + 2;
-                        color: "transparent"
-
-                        DropShadowText {
-                             id:styledDelegateLabel
-                           //  verticalAlignment: Text.AlignVCenter
-                             horizontalAlignment: Text.AlignLeft
-                             width: background.width;
-            height:30
-                            // color: styleData.selected ? "yellow" :  "white"
-                             text: styleData.text
-                         }
-                    }
+                            DropShadowText {
+                                 id:styledDelegateLabel
+                               //  verticalAlignment: Text.AlignVCenter
+                                 horizontalAlignment: Text.AlignLeft
+                                 width: background.width;
+                        height:30
+                                // color: styleData.selected ? "yellow" :  "white"
+                                 text: styleData.text
+                             }
 
                     itemDelegate.background: Rectangle {
                         radius: 2
                         opacity: .4
                         width: 128
-                        height: 200
+                        height: styledDelegateLabel.implicitHeight + 2
                         color: styleData.selected ? "#555" : "transparent"
                 }
 
